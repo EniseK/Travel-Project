@@ -12,6 +12,12 @@ body {
 	margin: 0 auto;
 }
 
+h2.text-center {
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+}
+
 header {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
 		url("images/istanbulHeader.jpg");
@@ -53,7 +59,7 @@ header h3 {
 
 header a {
 	color: #272044;
-	padding: 16px 32px;
+	padding: 12px 26px;
 	display: inline-block;
 	background: rgba(255, 255, 255, 0.6);
 	text-decoration: none;
@@ -111,10 +117,17 @@ footer a {
 }
 
 section {
-	max-width: 1200px;
+	max-width: 100%;
 	margin: 0 auto;
 	padding: 100px 0;
 }
+
+section.secondary {
+	background: #f8f8f8;
+	padding: 50px 150px 150px 150px;
+	text-align: center;
+}
+
 .grid {
 	display: grid;
 	grid-template-columns: 2fr 2fr 2fr;
@@ -125,15 +138,52 @@ section {
 	grid-gap: 30px;
 	margin: 0 150px;
 }
+.grid-3-columns {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+}
 
+.card {
+	background: white;
+	padding: 10px;
+}
+.card img {
+	display: block;
+}
+.btn {
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 16px 32px;
+	gap: 10px;
+	background: #462cb3;
+	text-decoration: none;
+	margin: 15px;
+}
 img {
-	margin-top: 50px;
-	width: 640px;
-	height: 600px;
+	margin-top: 15px;
+	width: 650px;
+	height: 630px;
 }
 
 main {
 	background-color: rgba(255, 255, 255);
+}
+
+main h2 {
+	width: 536px;
+	height: 24px;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 5px;
+	color: #272044;
+	opacity: 0.3;
 }
 main h3 {
 	height: 90px;
@@ -153,7 +203,34 @@ main p {
 	text-align: left;
 	opacity: 0.7;
 }
+h4 {
+	height: 36px;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 36px;
+	color: #272044;
+}
 
+h5 {
+	height: 20px;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 20px;
+	color: #272044;
+}
+.secondary img {
+	width: 185px;
+	height: 185px;
+}
+
+h4,
+h5 {
+	text-align: left;
+}
 @media (max-width: 1400px) {
 	header {
 		padding: 60px 0;
