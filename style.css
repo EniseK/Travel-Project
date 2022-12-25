@@ -128,6 +128,12 @@ section.secondary {
 	text-align: center;
 }
 
+section.gallery {
+	background: white;
+	padding: 50px 150px 150px 150px;
+	text-align: center;
+}
+
 .grid {
 	display: grid;
 	grid-template-columns: 2fr 2fr 2fr;
@@ -143,10 +149,22 @@ section.secondary {
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 10px;
 }
+.gallery img {
+	width: 370px;
+	height: 370px;
+}
+.image-grid {
+	padding-left: 25px;
+	display: grid;
+	grid-template-columns: 370px 370px 370px;
+
+	grid-gap: 30px;
+}
 
 .card {
 	background: white;
-	padding: 10px;
+	padding: 20px;
+	width: 370px;
 }
 .card img {
 	display: block;
@@ -167,6 +185,18 @@ img {
 	margin-top: 15px;
 	width: 650px;
 	height: 630px;
+}
+
+.embed {
+	width: 185px;
+	height: 185px;
+	margin: 0;
+	padding: 0;
+}
+
+.card-header.grid {
+	grid-gap: 0;
+	margin: 0;
 }
 
 main {
@@ -223,6 +253,8 @@ h5 {
 	color: #272044;
 }
 .secondary img {
+	margin: 0;
+	padding: 0;
 	width: 185px;
 	height: 185px;
 }
@@ -264,6 +296,19 @@ h5 {
 	img {
 		margin-top: 20px;
 		width: 320px;
+		height: 300px;
+	}
+
+	.image-grid {
+		padding-left: 25px;
+		display: grid;
+		grid-template-columns: 300px;
+
+		grid-gap: 10px;
+	}
+
+	.gallery img {
+		width: 300px;
 		height: 300px;
 	}
 }
